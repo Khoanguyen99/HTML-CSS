@@ -1,0 +1,54 @@
+
+body {
+    display: block;
+    border: 2px solid black;
+    width: 930px;
+    margin: 1em auto;
+    padding: 0.5em;
+}
+
+a:hover,
+a:focus {
+    font-style: italic;
+}
+
+/* Header */
+header img{
+    height: 80px;
+    float: left;
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    margin: 2em, 0;
+    padding-left: 120px;
+}
+header h3 {
+    font-size: 130%;
+    margin: 2em, 0;
+    padding-left: 120px;
+    font-style: italic;
+}
+
+/* Main */
+main {
+    clear: both;
+}
+main img {
+    height: 75px;
+}
+
+main h1 {
+    font-size: 150%;
+}
+main h2 {
+    font-size: 130%;
+    color: #800000;
+}
+main h3 {
+    font-size: 105%;
+}
+/* Footer */
+footer {
+    text-align: center;
+}

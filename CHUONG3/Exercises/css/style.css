@@ -1,0 +1,21 @@
+body {
+    display: block;
+    border: 2px solid black;
+    width: 800px;
+    padding-left: 0.5em;
+    padding-top: 0.7em;
+}
+/* Header */
+header img{
+    height: 80px;
+}
+header h2 p {
+    padding-right: 10em;
+}
+/* Main */
+main img {
+    height: 75px;
+}
+
+/* Footer */
+

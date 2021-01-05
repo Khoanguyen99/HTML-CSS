@@ -1,0 +1,94 @@
+html {
+    background-color: white;
+    
+}
+body {
+    display: block;
+    border: 4px solid #931420;
+    width: 550px;
+    margin: 1em auto;
+    padding: 0;
+    background-color: #fffded;
+}
+
+a:hover,
+a:focus {
+    font-style: italic;
+}
+
+/* Header */
+header {
+    border-bottom: 4px solid #931420;
+    padding-top: 25px;
+    background: linear-gradient(30deg,#f6bb73 0%,#f6bb73 30%,white 50%, #f6bb73 80%,#f6bb73 100%);
+}
+header img{
+    height: 80px;
+    float: left;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    margin: 0;
+    padding-left: 120px;
+}
+header p {
+    margin: 0 0 30px;
+}
+header h3 {
+    font-size: 130%;
+    margin: 0;
+    padding-left: 120px;
+    font-style: italic;
+}
+.shaw{
+    text-shadow: 1.5px 1px 1px #800000;
+}
+
+/* Main */
+main {
+    clear: both;
+    padding: 10px 35px;
+}
+main img {
+    height: 75px;
+}
+
+main h1 {
+    padding: 8px 0;
+    font-size: 150%;
+    border-top: 4px solid #931420;
+    border-bottom: 4px solid #931420;
+}
+main h2 {
+    font-size: 130%;
+    color: #800000;
+    margin: 0px;
+}
+main p {
+    margin: 7px 0px;
+}
+main blockquote {
+    margin: 7px 0;
+    padding-left: 20px;
+    font-style: italic;
+}
+main ul {
+    margin: 0;
+    padding-left: 20px;
+}
+main h3 {
+    font-size: 105%;
+}
+/* Footer */
+footer {
+    height: 50px;
+    text-align: center;
+    background-color: #931420;
+    color: white;
+}
+footer p {
+    padding: 15px;
+}

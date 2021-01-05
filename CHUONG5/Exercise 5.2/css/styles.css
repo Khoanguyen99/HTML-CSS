@@ -1,0 +1,21 @@
+html {
+    background-color: white;
+}
+
+body {
+    border: 2px solid black;
+    width: 700px;
+    margin: 20px auto;
+    box-shadow: 7px 7px 15px rgb(104, 102, 102);
+    background-color: #fffded;
+}
+
+body h1 {
+    border: 4px double rgb(231, 20, 20);
+    border-radius: 10px;
+    box-shadow: 7px 7px 2px black;
+    height: 40px;
+    padding: 10px 25px 10px 50px;   
+    margin: 15px 25px;
+    background-color: white;
+}
