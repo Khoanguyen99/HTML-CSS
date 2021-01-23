@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" type="" href="../img/favicon.png"/>
+    <!-- Use SlickNav Menu -->
+    <link rel="stylesheet" href="../plugin/SlickNav/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../plugin/SlickNav/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#nav_menu").slicknav({
+                prependTo: "#mobile_menu"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <img src="../img/town_hall_logo.gif" alt="Town Hall Logo">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>
+            Celebrating our <i class="shaw">75<sup>th</sup></i> Year
+        </h3>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Speakers</a></li>
+            <li><a href="">Luncheons</a></li>
+            <li><a href="">Tickets</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Guest speakers</h2>
+            <h3 class="Toobin">
+                <p>October</p>
+                <a href="../html/Joobin.html">Jeffrey Toobin</a>
+            </h3>
+            <a href="../html/Joobin.html"><img src="../img/Jeffrey_Toobin.jpg" alt="Jeffrey Toobin" height="75px"></a>
+            <h3 class="Same">
+                <p>November</p>
+                <a href="../html/Sorkin.html">Andreww Ross Sorkin</a>
+            </h3>
+            <a href="../html/Sorkin.html"><img src="../img/sorkin75.jpg" alt="Andreww Ross Sorkin" height="75px"></a>
+            <h3 class="Same">
+                <p>January</p>
+                <a href="../html/Chua.html">Amy Chua</a>
+            </h3>
+            <a href="../html/Chua.html"><img src="../img/chua75.jpg" alt="Amy Chua" height="75px"></a>
+            <h3 class="Same">
+                <p>February</p>
+                <a href="../html/Scott.html">Scott Sampson</a>
+            </h3>
+            <a href="../html/Scott.html"><img src="../img/sampson75.jpg" alt="Scott Sampson" height="75px"></a>
+        </aside>
+        <div class="form">
+            <h1>Order Form</h1>
+            <form action="">
+                <fieldset class="MI">
+                    <legend><b>Member Information</b></legend>
+                    <label for="email">E-Mail:</label>
+                    <input type="text" id="email" name="email" required><br><br>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required><br><br>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required><br><br>
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" placeholder="2-character code" required><br><br>
+                    <label for="zipcode">ZIP Code:</label>
+                    <input type="text" id="zipcode" name="zipcode" placeholder="5 or 9 digits"
+                        pattern="\d{5}([\-]\d{9})" title="Must be 99999 or 99999-9999" required><br><br>
+                    <label for="pnumber">Phone Number:</label>
+                    <input type="tel" id="pnumber" name="pnumber" placeholder="999-999-9999"
+                        pattern="\d{3}[\-]\d{3}\d{4}" title="Must be 99999 or 999-999-9999" required><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Ordering Information</b></legend>
+                    <label for="otype">Order Type:</label>
+                    <input list="lists" name="otype" required><br><br>
+                    <datalist id="lists">
+                        <option value="Member Package"></option>
+                        <option value="Customer"></option>
+                    </datalist>
+                    <label for="ntickets">Number of Tickets:</label>
+                    <input type="text" id="ntickets" name="ntickets" placeholder="Number of Tickets" required><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Payment Method</b></legend>
+                    <input type="radio" id="bme" required>
+                    <label class="s" for="bme">Bill Me</label>
+                    <input type="radio" id="ccard" required>
+                    <label class="s" for="ccard">Credit Card</label>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Credit Card Information</b></legend>
+                    <label for="ctype">Card Type:</label>
+                    <input list="list-c" name="list-c" required><br><br>
+                    <datalist id="list-c">
+                        <option value="Visa"></option>
+                        <option value="Credit Card"></option>
+                    </datalist>
+                    <label for="cnumber">Card Number:</label>
+                    <input type="text" id="cnumber" name="cnumber" placeholder="16digits"
+                        pattern="\d{4}-\d{4}-\d{4}-\d{4}" title="Must be 9999-9999-9999-9999" required><br><br>
+                    <label for="edate">Expiration date: </label>
+                    <input class="dt" list="month" name="edate">
+                    <datalist id="month">
+                        <option value="January"></option>
+                        <option value="February"></option>
+                    </datalist>
+                    <input class="y" list="year" name="edate">
+                    <datalist id="year">
+                        <option value="2017"></option>
+                        <option value="2018"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Submit Your Order</b></legend>
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="submit" name="rfields" value="Reset Fields">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+
+</html>
